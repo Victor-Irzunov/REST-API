@@ -1,7 +1,6 @@
 const express = require('express')
 const todoRoutes = require('./routes/todo')
 const sequelize = require('./utils/database')
-const chalk = require('chalk')
 const path = require('path')
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -19,11 +18,11 @@ async function start() {
 	try {
 		await sequelize.sync()           //force: true перетирать 
 
-		app.listen(PORT, () => console.log(chalk.cyan('------------Запущено-----------')))
+		app.listen(PORT, () => console.log('------------Запущено-----------'))
 
 	}
 	catch (error) {
-		console.log(chalk.red('Витя ошибка:', error, '---------index start()'))
+		console.log('Витя ошибка:', error, '---------index start()')
 	}
 }
 

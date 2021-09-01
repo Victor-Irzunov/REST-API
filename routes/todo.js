@@ -1,6 +1,5 @@
 const { Router } = require('express')
 const Todo = require('../models/todo')
-const chalk = require('chalk')
 const router = Router()
 
 //++ получение
