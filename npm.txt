@@ -1,0 +1,19 @@
+npm install --save sequelize                №90. Подключение к базе данных
+npm install --save mysql2              драйвер    №90. Подключение к базе данных
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+files.exclude (убрал node_modules)
